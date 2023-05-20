@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="../Css/musicplayer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+<div class="logo" >
+    <img src="https://asset.brandfetch.io/idhXjxLF9g/idDdtM-Aux.png" alt="">
+    <div> Wynk  </div>
+    <div> Music  </div>
+    <div> Player </div>
+</div>
+    <section class="container">
+       <input onchange="data()" class="input" type="text" placeholder="Search Artist, Songs,Albums">
+    </section>
+
+    <section class="all"> 
+      <button type="button" value="all" onclick="mainfunction(event)">All</button>
+      <button type="button" value="Trending" onclick="mainfunction(event)">Trending Songs</button>
+      <button type="button" value="new" onclick="event()">New Songs</button>
+      <button type="button" value="old" onclick="mainfunction(event)">Old Songs</button>
+      <button type="button" value="album" onclick="mainfunction(event)"> Top Albums</button>
+      <button type="button" value="radio" onclick="mainfunction(event)">Radio</button>
+      <button type="button" value="podcast" onclick="mainfunction(event)">Podcast</button>
+      <button type="button" value="mood" onclick="mainfunction(event)">Moods & genre</button>
+      <button type="button" value="playlist" onclick="mainfunction(event)">Top Playlist</button>
+      <button type="button" value="artist" onclick="mainfunction(event)">Top Artists</button>
+      <button type="button" value="my music" onclick="mainfunction(event)">My Music</button>
+    </section>
+
+<section class="divcenter">
+<div class="songlist"> </div>
+<div class="songimg">
+<img class="currentsongimg" src="https://media.istockphoto.com/id/1175435360/vector/music-note-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=R7s6RR849L57bv_c7jMIFRW4H87-FjLB8sqZ08mN0OU=" alt="">    
+</div>
+</section>
+
+<div class="trend">
+<audio class="audio" id="audio">
+    <source src="../media/[iSongs.info] 01 - Hoshare.mp3" type="audio/mpeg">
+    <button id="playPausebtn" onclick="playpause()">PLAY &#9658;</button>
+    &nbsp;
+    &nbsp;
+    <button>Stop &#9611;</button>
+    </audio>    
+</div>
+</body>
+<script src="../Js/musicplayer.js"></script>
+</html>

@@ -1,0 +1,81 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body
+{
+ width:100vw;
+ height:100vh;
+ background-image:url(https://wallpapers.com/images/featured/indian-tiger-uwfrnsg6kvysorj4.jpg);
+ background-repeat: no-repeat;
+
+}
+
+.container
+{
+    width:100vw;
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.5rem;
+    color:aliceblue;
+    font-size: 2.5rem;
+}
+.logo
+{
+    width:5vw;
+    height:10vh;
+    display:flex;
+    flex-direction: row;
+    font-size: 2rem;
+    color:beige;
+    row-gap: 2rem;
+}
+
+.all
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:1rem;
+    font-size: 2rem;
+ 
+}
+.songimg
+{
+  width:100vw;
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+   
+}
+#a
+{
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+margin-top: 1rem;
+}
+.currentsongimg
+{
+    width:10rem;
+    height: 10rem;
+    margin-top: 1rem;
+    border:1px solid black
+}
+.input
+{
+    width:50vw;
+
+}
