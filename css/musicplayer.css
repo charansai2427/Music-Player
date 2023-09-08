@@ -1,81 +1,91 @@
-*
-{
-    padding:0;
-    margin:0;
+*{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
-body
-{
- width:100vw;
- height:100vh;
- background-image:url(https://wallpapers.com/images/featured/indian-tiger-uwfrnsg6kvysorj4.jpg);
- background-repeat: no-repeat;
-
-}
-
-.container
-{
-    width:100vw;
-    height:20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0.5rem;
-    color:aliceblue;
-    font-size: 2.5rem;
-}
-.logo
-{
-    width:5vw;
-    height:10vh;
-    display:flex;
-    flex-direction: row;
-    font-size: 2rem;
-    color:beige;
-    row-gap: 2rem;
-}
-
-.all
-{
+body{
     width: 100vw;
+    height: 90vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: center; */
     align-items: center;
-    margin-bottom:1rem;
-    font-size: 2rem;
- 
+    flex-direction: column;
+    background-color: aqua;
+    font-size: 1.5rem;
+    color: white;
+    background-image: url(https://static1.squarespace.com/static/54e7a1a6e4b08db9da801ded/t/61eb41b698b5f077a9637a40/1642807755677/81.jpg?format=1500w);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.songimg
-{
-  width:100vw;
-    display:flex ;
-    flex-direction: row;
+.input{
+    width: 30rem;
+    height: 2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+}
+button{
+    width: 7rem;
+    height: 2rem;
+    margin-right: 2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.audio{
+    width: 60rem;
+    border: 5px double;
+}
+.currentImg{
+    width: 10rem;
+    height: 7rem;
+    border: 4px double black;
+    border-radius: 10px;
+    margin: 2rem;
+}
+img{
+    width: 15rem;
+    height: 15rem;
+    border: 4px double black;
+    border-radius: 10px;
+    margin: 2rem;
+}
+.list{
+    display: flex;
     justify-content: center;
     align-items: center;
-    row-gap: 5rem;
-   
+    flex-wrap: wrap;
 }
-#a
-{
-    width:100vw;
+.songimg{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-margin-top: 1rem;
 }
-.currentsongimg
-{
-    width:10rem;
-    height: 10rem;
-    margin-top: 1rem;
-    border:1px solid black
+.musicbtn{
+    background-color: transparent;
+    width: 2rem;
+    border: none;
 }
-.input
-{
-    width:50vw;
-
+ion-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.progress{
+    /* position: fixed; */
+    height:5px;
+    width:50rem;
+    background-color: white;
+}
+.progressbar{
+    /* position: absolute; */
+    height:5px;
+    width:0%;
+    background-color:black;
+}
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
