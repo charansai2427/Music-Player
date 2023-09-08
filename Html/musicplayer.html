@@ -6,50 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <link rel="stylesheet" href="../Css/musicplayer.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/46/70/dc/4670dcfa605291cc36999c3bf1d5296f.jpg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <body>
     
-<div class="logo" >
-    <img src="https://asset.brandfetch.io/idhXjxLF9g/idDdtM-Aux.png" alt="">
-    <div> Wynk  </div>
-    <div> Music  </div>
-    <div> Player </div>
-</div>
-    <section class="container">
-       <input onchange="data()" class="input" type="text" placeholder="Search Artist, Songs,Albums">
-    </section>
+    <div>
+        <label for="">JIOSAVAAN</label>
+        <input class="input" onchange="data()" type="text" placeholder="Type here to search">
+    </div>
 
-    <section class="all"> 
-      <button type="button" value="all" onclick="mainfunction(event)">All</button>
-      <button type="button" value="Trending" onclick="mainfunction(event)">Trending Songs</button>
-      <button type="button" value="new" onclick="event()">New Songs</button>
-      <button type="button" value="old" onclick="mainfunction(event)">Old Songs</button>
-      <button type="button" value="album" onclick="mainfunction(event)"> Top Albums</button>
-      <button type="button" value="radio" onclick="mainfunction(event)">Radio</button>
-      <button type="button" value="podcast" onclick="mainfunction(event)">Podcast</button>
-      <button type="button" value="mood" onclick="mainfunction(event)">Moods & genre</button>
-      <button type="button" value="playlist" onclick="mainfunction(event)">Top Playlist</button>
-      <button type="button" value="artist" onclick="mainfunction(event)">Top Artists</button>
-      <button type="button" value="my music" onclick="mainfunction(event)">My Music</button>
-    </section>
+    <div class="all">
+        <button class="songss" value="All" type="button" onclick="mainfunction(event)">All</button>
+        <button class="songss" value="Trending Songs" type="button" onclick="mainfunction(event)">Trending Songs</button>
+        <button class="songss" value="New Songs" type="button" onclick="mainfunction(event)">New Songs</button>
+        <button class="songss" value="Old Songs" type="button" onclick="mainfunction(event)">Old Songs</button>
+        <button class="songss" value="Album" type="button" onclick="mainfunction(event)">Album </button>
+        <button class="songss" value="Radio" type="button" onclick="mainfunction(event)">Radio</button>
+        <button class="songss" value="Podcast" type="button" onclick="mainfunction(event)">Podcast</button>
+        <button class="songss" value="Moods & Genres" type="button" onclick="mainfunction(event)">Moods & Genres</button>
+        <button class="songss" id="myMusic" value="My Music" type="button" >My Music</button>
+    </div>
 
-<section class="divcenter">
-<div class="songlist"> </div>
-<div class="songimg">
-<img class="currentsongimg" src="https://media.istockphoto.com/id/1175435360/vector/music-note-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=R7s6RR849L57bv_c7jMIFRW4H87-FjLB8sqZ08mN0OU=" alt="">    
-</div>
-</section>
+    <div class="divcenter">
+        <div class="list"></div>
+        <div class="songimg">
+      
+            <img class="currentImg" src="https://media.istockphoto.com/id/1175435360/vector/music-note-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=R7s6RR849L57bv_c7jMIFRW4H87-FjLB8sqZ08mN0OU=" alt="" style="width:80px;height:80px"> 
+        </div>
+    </div>
 
-<div class="trend">
-<audio class="audio" id="audio">
-    <source src="../media/[iSongs.info] 01 - Hoshare.mp3" type="audio/mpeg">
-    <button id="playPausebtn" onclick="playpause()">PLAY &#9658;</button>
-    &nbsp;
-    &nbsp;
-    <button>Stop &#9611;</button>
-    </audio>    
-</div>
+    <div class="player">
+        <div class="progress" id="progress">
+            <div class="progressbar" id="pgbar"></div>
+        </div>
+        <div>
+            <button type="button" id="prevsong" class="musicbtn"><ion-icon name="play-back-circle"></ion-icon>.</button>
+            <button type="button" id="play/pause" class="musicbtn"><ion-icon name="play-circle"></ion-icon>.</button>
+            <button type="button" id="nextsong" class="musicbtn"><ion-icon name="play-forward-circle"></ion-icon>.</button>
+        </div>
+    </div>
+
+    <div class="trend">
+        <audio style="visibility:hidden;" class="audio" src="" controls autoplay></audio>
+    </div>
+    <div class="playlist">
+        <button id="addtoplaylist">Add to Playlist</button>
+    </div>
 </body>
 <script src="../Js/musicplayer.js"></script>
+
 </html>
